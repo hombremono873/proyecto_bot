@@ -1,0 +1,110 @@
+/* ========== 🎨 FONDO Y FUENTE GENERAL ========== */
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #0f1117 !important;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== 🔠 TIPOGRAFÍA GENERAL ========== */
+h1, h2, h3 {
+    color: #00c0ff;
+}
+p, label, div, span, .markdown-text-container {
+    color: #e0e0e0;
+}
+
+/* ========== 🧩 INPUTS Y BOTONES ========== */
+input, textarea {
+    background-color: #2d2f41;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 6px;
+}
+div.stButton > button {
+    background-color: #00c0ff !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+}
+div.stButton > button:hover {
+    background-color: #0090dd !important;
+}
+
+/* ========== 🧭 SIDEBAR PERSONALIZADO ========== */
+section[data-testid="stSidebar"] {
+    background-color: #1f1f2e !important;
+}
+
+/* ========== 💻 BLOQUES DE CÓDIGO ========== */
+code, pre {
+    background-color: #1e1e2e;
+    color: #00ffff;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    padding: 1rem;
+    border-radius: 8px;
+    display: block;
+    overflow-x: auto;
+}
+
+/* ========== 🔷 BARRA SUPERIOR NATIVA STREAMLIT ========== */
+header[data-testid="stHeader"] {
+    background-color: #00c0ff !important;
+    color: white !important;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+header[data-testid="stHeader"] * {
+    color: white !important;
+    font-size: 14px !important;
+}
+
+/* ========== 🚫 OCULTAR MENÚ MULTIPÁGINA NATIVO ========== */
+div[data-testid="stSidebarNav"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ========== 🎨 option_menu (menu vertical personalizado) ========== */
+div[data-testid="stSidebar"] ul[class^="option-menu"] {
+    background-color: #1f1f2e;
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+}
+
+div[data-testid="stSidebar"] ul[class^="option-menu"] li {
+    font-size: 16px;
+    text-align: left;
+    margin: 5px;
+    color: #ffffff;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+div[data-testid="stSidebar"] ul[class^="option-menu"] li:hover {
+    background-color: #33334d;
+    cursor: pointer;
+}
+
+div[data-testid="stSidebar"] ul[class^="option-menu"] li.active {
+    background-color: #00c0ff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Íconos del menu */
+div[data-testid="stSidebar"] ul[class^="option-menu"] span[class^="icon-container"] {
+    color: #00c0ff;
+    font-size: 20px;
+}
